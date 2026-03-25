@@ -222,7 +222,7 @@ local oldBounty = lp.leaderstats["Bounty/Honor"].Value
 lp.leaderstats["Bounty/Honor"].Changed:Connect(function(newVal)
     if newVal > oldBounty then
         game:GetService("StarterGui"):SetCore("SendNotification", {
-            Title = "🎯 TARGET KILLED!",
+            Title = "TARGET KILLED!",
             Text = "Gained: +" .. tostring(newVal - oldBounty) .. " Bounty",
             Duration = 5
         })
